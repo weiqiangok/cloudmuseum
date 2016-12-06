@@ -1,9 +1,9 @@
 <?php
 
-namespace app\models\msg;
+namespace app\models;
 
-// use app\models\msg\TopClient;
-// use app\models\msg\AlibabaAliqinFcSmsNumSendRequest;
+use app\models\msg\TopClient;
+use app\models\msg\AlibabaAliqinFcSmsNumSendRequest;
 
 class AlimsgForm 
 {

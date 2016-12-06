@@ -17,7 +17,7 @@ jQuery(document).ready(function(){
         pauseonmouseover:true,
         addmargin:true,
         randomplay:false,
-        slideinterval:5000,
+        slideinterval:4000,
         enabletouchswipe:true,
         transitiononfirstslide:false,
         loop:0,

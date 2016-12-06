@@ -2,71 +2,92 @@
 use app\assets\CameraAsset;
 CameraAsset::register($this);
 $this->title = '相机建模';
+$this->params['breadcrumbs']['0'] = '<a href="/upload/index">文件中心</a>';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<section class="grid3d horizontal" id="grid3d">
-				<div class="grid-wrap" style="margin-top: 20px;">
-					<div class="grid">
-						<figure><img src="/images/img/4.jpg" alt="img04"/></figure>
-						<figure><img src="/images/img/3.jpg" alt="img03"/></figure>
-						<figure><img src="/images/img/1.jpg" alt="img01"/></figure>
-						<figure><img src="/images/img/5.jpg" alt="img05"/></figure>
-						<figure><img src="/images/img/2.jpg" alt="img02"/></figure>
-						<figure><img src="/images/img/8.jpg" alt="img08"/></figure>
-					</div>
-				</div><!-- /grid-wrap -->
-				<div class="content" style="margin-top: 50px;">
-					<div>
-						<div class="dummy-img"></div>
-						<p class="dummy-text">这是点击后出现的内容The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
-						<p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
-					</div>
-					<div>
-						<div class="dummy-img"></div>
-						<p class="dummy-text">这是点击后出现的内容2The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
-						<p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
-					</div>
-					<div>
-						<div class="dummy-img"></div>
-						<p class="dummy-text">这是点击后出现的内容3The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
-						<p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
-					</div>
-					<div>
-						<div class="dummy-img"></div>
-						<p class="dummy-text">这是点击后出现的内容4The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
-						<p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
-					</div>
-					<div>
-						<div class="dummy-img"></div>
-						<p class="dummy-text">这是点击后出现的内容5The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
-						<p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
-					</div>
-					<div>
-						<div class="dummy-img"></div>
-						<p class="dummy-text">这是点击后出现的内容6The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
-						<p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
-					</div>
-					<div>
-						<div class="dummy-img"></div>
-						<p class="dummy-text">这是点击后出现的内容7The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
-						<p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
-					</div>
-					<div>
-						<div class="dummy-img"></div>
-						<p class="dummy-text">这是点击后出现的内容8The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
-						<p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
-					</div>
-					<div>
-						<div class="dummy-img"></div>
-						<p class="dummy-text">这是点击后出现的内容9The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
-						<p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
-					</div>
-					<span class="loading"></span>
-					<span class="icon close-content"></span>
-				</div>
-			</section>
-			<script>
-			window.onload=function(){
-				new grid3D( document.getElementById( 'grid3d' ) );
-				}
-		</script>
+<header id="header">
+    <hgroup>
+        <h1>手机建模</h1>
+        <h2>请按提示角度拍照上传</h2>
+    </hgroup>
+</header>
+<form id="" action="/upload/receive" method="post">
+<label>名称</label> <input type="text" id="signupform-username"
+	class="form-control" name="SignupForm[username]">
+<div class="help-block"></div>
+<label>所属分类</label>
+<select class="form-control" name="class">
+	<option>金石</option>
+	<option>书画</option>
+	<option>陶瓷</option>
+	<option>工艺</option>
+</select>
+<div class="help-block"></div>
+<label>兴趣圈</label>
+<select class="form-control" name="name="xq"">
+	<option>收藏</option>
+	<option>拍卖</option>
+	<option>想要</option>
+	<option>估价</option>
+	<option>娱乐</option>
+</select>
+<div class="help-block"></div>
+<input type="file" id="Front" class="dropify" /><br>
+<input type="file" id="Back" class="dropify" /><br>
+<input type="file" id="Left" class="dropify" /><br>
+<input type="file" id="Right" class="dropify" /><br>
+<input type="file" id="Top" class="dropify" /><br>
+<input type="file" id="Bottom" class="dropify" />
+<div class="help-block"></div>
+<label>是否共享</label><br> <span class="glyphicon glyphicon-ok"></span><input
+	type="radio" name="Sex" value="Y" checked="checked"> <span
+	class="glyphicon glyphicon-remove"></span><input type="radio"
+	name="Sex" value="N">
+<div class="help-block"></div>
+<button type="submit" class="btn btn-primary btn-block" name="signup-button">上传</button>
+</form>
+<script>
+            window.onload=function(){
+            	
+                // Basic
+                // $('.dropify').dropify();
+                // Translated
+                for(var i=0;i<6;i++){
+                	var idname = $('.dropify')[i].id;
+                	$('#'+idname).dropify({
+                        messages: {
+                            default: idname,
+                            replace: '点击重新拍摄',
+                            remove:  '移除',
+                            error:   'Désolé, le fichier trop volumineux'
+                        }
+                    });
+                }
+                
+                // Used events
+                var drEvent = $('#input-file-events').dropify();
+
+                drEvent.on('dropify.beforeClear', function(event, element){
+                    return confirm("Do you really want to delete \"" + element.file.name + "\" ?");
+                });
+
+                drEvent.on('dropify.afterClear', function(event, element){
+                    alert('File deleted');
+                });
+
+                drEvent.on('dropify.errors', function(event, element){
+                    console.log('Has Errors');
+                });
+
+                var drDestroy = $('#input-file-to-destroy').dropify();
+                drDestroy = drDestroy.data('dropify')
+                $('#toggleDropify').on('click', function(e){
+                    e.preventDefault();
+                    if (drDestroy.isDropified()) {
+                        drDestroy.destroy();
+                    } else {
+                        drDestroy.init();
+                    }
+                })
+            };
+        </script>

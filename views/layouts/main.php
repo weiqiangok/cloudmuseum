@@ -44,8 +44,8 @@ AppAsset::register($this);
     }else{
     	$items = [
             ['label' => '<span class="glyphicon glyphicon-comment"></span> 关于', 'url' => ['/site/about']],
-            ['label' => '<span class="glyphicon glyphicon-send"></span> 上传', 'url' => ['/upload/index']],
-    		['label' => "<span class='glyphicon glyphicon-user'></span> 个人信息", 'url' => ['/user/site']],
+            ['label' => '<span class="glyphicon glyphicon-file"></span> 文件中心', 'url' => ['/upload/index']],
+    		['label' => "<span class='glyphicon glyphicon-user'></span> 个人信息", 'url' => ['/user/index']],
             Yii::$app->user->isGuest ? (
                 ['label' => '登录', 'url' => ['/site/login']]
             ) : (

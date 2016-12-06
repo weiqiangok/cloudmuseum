@@ -4,11 +4,18 @@ namespace app\controllers;
 
 use yii\web\Controller;
 use app\models\User;
-use app\models\msg\AlimsgForm;
+use app\models\AlimsgForm;
 
 class UserController extends Controller
 {
-	public function actionSite()
+    public function actionIndex()
+    {
+        if(\Yii::$app->user->isGuest){
+            return $this->redirect(['site/login']);
+        }
+        return $this->render('index');
+    }
+    public function actionSite()
 	{
 		if(\Yii::$app->user->isGuest){
 			return $this->redirect(['site/login']);
@@ -45,11 +52,12 @@ class UserController extends Controller
 		
 		return $this->render('info');
 	}
-	public function actionMessage()
+	public function actionMsgcode()
 	{
 	    $code = rand(100000,999999);
 	    $phoneNum = '17091429869';
-	    var_dump(AlimsgForm::sendmsg($code,$phoneNum));
-	    return $this->render('message');
+	    $name = \Yii::$app->user->identity->username;
+	    $result = AlimsgForm::sendmsg($code,$phoneNum,$name);
+	    var_dump($result);
 	}
 }
