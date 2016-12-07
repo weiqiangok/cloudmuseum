@@ -44,6 +44,25 @@ class UserController extends Controller
 		}
 		return $this->render('password');
 	}
+	public function actionPasswordset()
+	{
+// 	    if($_POST!=null){
+// 	        $username = \Yii::$app->user->identity->username;
+// 	        $user = User::findByUsername($username);
+// 	        $oldPassword = $_POST['oldPassword'];
+// 	        $hash = $user->password_hash;
+// 	        if(\Yii::$app->security->validatePassword($oldPassword, $hash)){
+// 	            $user->password=$_POST['newPassword'];
+// 	            if($user->save()){
+// 	                \Yii::$app->session->setFlash ( 'success', '修改成功' );
+// 	            }
+// 	        }else{
+// 	            \Yii::$app->session->setFlash ( 'error', '原密码输入错误' );
+// 	        }
+	         
+// 	    }
+	    return $this->render('passwordset');
+	}
 	public function actionInfo()
 	{
 		if(\Yii::$app->user->isGuest){

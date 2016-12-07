@@ -35,7 +35,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 <?= $form->field($model, 'rememberMe')->checkbox([
                     'template' => "<div class=\"col-lg-offset-1 col-lg-3\">{input} {label}</div>\n<div class=\"col-lg-8\">{error}</div>",
                 ]) ?>
-        
+				<div style="color:#999;margin:1em 0 1em 6.5em;">
+					如果您忘记密码，请<a href="/user/passwordset">点此重置</a>。
+                </div>
                 <div class="form-group">
                     <div class="col-lg-offset-1 col-lg-11">
                         <?= Html::submitButton('登录', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
