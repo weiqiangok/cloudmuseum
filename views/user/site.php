@@ -1,6 +1,6 @@
 <?php 
 $this->title = '二次密码验证';
-$this->params['breadcrumbs']['0'] = '<a href="/user/index">个人中心</a>';
+$this->params['breadcrumbs']['0'] = '账户设置';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <?= $this->render('usermenu',['site'=>true]); ?>
