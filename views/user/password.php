@@ -7,7 +7,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <?= $this->render('usermenu',['site'=>true]); ?>
 <?= $this->render('passwordmenu',['password'=>true]); ?>
-<div style="width: 50%;text-align: left;float:left;margin-left:5%;margin-top:3%;">
+<div style="width: 40%;text-align: left;float:left;margin-left:5%;margin-top:3%;">
 	<form id="form-signup" action="" method="post" >
 		<input type="hidden" name="_csrf" value="WVVWaEZNM0gGPx4sNStVAygPMAAlP2AqEAIHNxEGXCZhAmRfax1.LA==">
 		<div class="form-group" id="forma">

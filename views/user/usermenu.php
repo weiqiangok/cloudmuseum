@@ -7,10 +7,9 @@ use  yii\helpers\Html;
 	</div>
 	<div id="w2" class="list-group">
 	    <?= Html::a('<span class="glyphicon glyphicon-lock"></span> 账户设置', ['/user/index',], ['class' => isset($site)?'list-group-item active':'list-group-item']);?>
-		<?= Html::a('<span class="glyphicon glyphicon-list-alt"></span> 我的信息', ['/user/info',], ['class' => isset($info)?'list-group-item active':'list-group-item']);?>
-		<?= Html::a('<span class="glyphicon glyphicon-shopping-cart"></span> 订单信息', ['/user/site',], ['class' => 'list-group-item']);?>
-		<?= Html::a('<span class="glyphicon glyphicon-ok-sign"></span> 支付信息', ['/user/site',], ['class' => 'list-group-item']);?>
-		<?= Html::a('<span class="glyphicon glyphicon-cloud"></span> 云空间管理', ['/user/site',], ['class' => 'list-group-item']);?>
-		<?= Html::a('<span class="glyphicon glyphicon-eye-close"></span> 隐私管理', ['/user/site',], ['class' => 'list-group-item']);?>
+		<?= Html::a('<span class="glyphicon glyphicon-shopping-cart"></span> 订单信息', ['/user/order',], ['class' => isset($order)?'list-group-item active':'list-group-item']);?>
+		<?= Html::a('<span class="glyphicon glyphicon-cloud"></span> 云空间管理', ['/user/cloud',], ['class' => isset($cloud)?'list-group-item active':'list-group-item']);?>
+		<?= Html::a('<span class="glyphicon glyphicon-eye-close"></span> 隐私管理', ['/user/secret',], ['class' => isset($secret)?'list-group-item active':'list-group-item']);?>
+		<?= Html::a('<span class="glyphicon glyphicon-ok-sign"></span> 支付信息', ['/user/buy',], ['class' => isset($buy)?'list-group-item active':'list-group-item']);?>
 	</div>        
 </div>

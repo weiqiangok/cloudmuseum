@@ -1,28 +1,24 @@
 <?php
-$this->title = '密码重置请求';
+use app\assets\UserAsset;
+$this->title = '重置密码';
+UserAsset::register($this);
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-request-password-reset">
-	<h3>密码重置请求</h3>
-	<p>请填写您的电子邮件，一个重置密码的链接将被发送到您提供的邮箱。</p>
-	<div class="row">
-		<div class="col-lg-5">
-			<form id="request-password-reset-form"
-				action="/request-password-reset" method="post">
-				<input type="hidden" name="_csrf"
-					value="a3FhZC14aUchECYRVQghIA1CCAB3HwECADALM1cuDj44FAYQQBYRDA==">
-				<div
-					class="form-group field-passwordresetrequestform-email required">
-					<label class="control-label" for="passwordresetrequestform-email">电子邮箱</label>
-					<input type="text" id="passwordresetrequestform-email"
-						class="form-control" name="PasswordResetRequestForm[email]">
-
-					<div class="help-block"></div>
-				</div>
-				<div class="form-group">
-					<button type="submit" class="btn btn-primary">发送</button>
-				</div>
-			</form>
-		</div>
-	</div>
+<div style="width: 40%;text-align: left;">
+	<form id="form-signup" action="/user/setsuccess" method="post" >
+		<input type="hidden" name="_csrf" value="WVVWaEZNM0gGPx4sNStVAygPMAAlP2AqEAIHNxEGXCZhAmRfax1.LA==">
+		<div class="form-group" id="formb">
+		<input type="hidden" id="oldPassword" class="form-control" name="oldPassword" value="<?php echo $token?>">
+		<h3>请输入您的新密码：</h3>
+		<label>新密码</label>
+		<input type="password" id="newPassword1" class="form-control" name="newPassword">
+		<p class="help-block"></p>
+        </div>
+		<div class="form-group" id="formc">
+		<label>重复新密码</label>
+		<input type="password" id="newPassword2" class="form-control" name="newPassword">
+		<p class="help-block" id="compare"></p>
+        </div>
+		<input type="submit" class="btn btn-primary" value="修改" onclick="return check(this.form)">
+	</form>
 </div>

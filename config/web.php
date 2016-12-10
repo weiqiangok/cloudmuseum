@@ -48,7 +48,25 @@ $config = [
             'rules' => [
             ],
         ],
-
+        'mailer' => [
+            'class' => 'yii\swiftmailer\Mailer',
+            'useFileTransport' => false,
+            'transport' => [
+                'class' => 'Swift_SmtpTransport',
+                'host' => 'smtp.163.com',
+                'username' => 'weiqiangoky@163.com',
+                'password' => 'wy19910708',
+                'port' => '25',
+                'encryption' => 'tls'
+            ]
+            ,
+            'messageConfig' => [
+                'charset' => 'UTF-8',
+                'from' => [
+                    'weiqiangoky@163.com' => 'admin(3D云博)'
+                ]
+            ]
+        ]
     ],
     'params' => $params,
 ];
