@@ -137,14 +137,13 @@ class UserController extends Controller
 	        $redis = new Redis();
 	        $redis->connect('127.0.0.1', 6379);
 	        $email = $redis->get($token);
-// 	        var_dump($email);die;
             if($email !== false){
                 $user = User::findOne(['email' => $email]);
                 $user -> password = $newPassword;
                 if($user->save()){
+                    $redis->delete($token);
                     \Yii::$app->session->setFlash ( 'success', '修改成功,请重新登录！' );
                 }
-//                 var_dump($user);die;
             }
 	        return $this->goHome();
 	    }
